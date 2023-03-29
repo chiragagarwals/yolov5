@@ -1,28 +1,28 @@
-lr0: 0.09801 # initial learning rate (SGD=1E-2, Adam=1E-3)
+lr0: 0.098 # initial learning rate (SGD=1E-2, Adam=1E-3)
 lrf: 0.0102 # final OneCycleLR learning rate (lr0 * lrf)
-momentum: 0.92438 # SGD momentum/Adam beta1
+momentum: 0.924 # SGD momentum/Adam beta1
 weight_decay: 0.0006 # optimizer weight decay 5e-4
-warmup_epochs: 2.961 # warmup epochs (fractions ok)
-warmup_momentum: 0.69069 # warmup initial momentum
-warmup_bias_lr: 0.11538 # warmup initial bias lr
-box: 0.05667 # box loss gain
-cls: 0.25397 # cls loss gain
-cls_pw: 1.26919 # cls BCELoss positive_weight
-obj: 1.17427 # obj loss gain (scale with pixels)
-obj_pw: 1.0172 # obj BCELoss positive_weight
+warmup_epochs: 2.96 # warmup epochs (fractions ok)
+warmup_momentum: 0.691 # warmup initial momentum
+warmup_bias_lr: 0.115 # warmup initial bias lr
+box: 0.0567 # box loss gain
+cls: 0.254 # cls loss gain
+cls_pw: 1.27 # cls BCELoss positive_weight
+obj: 1.17 # obj loss gain (scale with pixels)
+obj_pw: 1.02 # obj BCELoss positive_weight
 iou_t: 0.55 # IoU training threshold
-anchor_t: 5.3133 # anchor-multiple threshold
+anchor_t: 5.31 # anchor-multiple threshold
 fl_gamma: 0.0 # focal loss gamma (efficientDet default gamma=1.5)
-hsv_h: 0.01329 # image HSV-Hue augmentation (fraction)
-hsv_s: 0.68992 # image HSV-Saturation augmentation (fraction)
-hsv_v: 0.4172 # image HSV-Value augmentation (fraction)
+hsv_h: 0.0133 # image HSV-Hue augmentation (fraction)
+hsv_s: 0.69 # image HSV-Saturation augmentation (fraction)
+hsv_v: 0.417 # image HSV-Value augmentation (fraction)
 degrees: 0.0735 # image rotation (+/- deg)
-translate: 0.06238 # image translation (+/- fraction)
-scale: 0.71963 # image scale (+/- gain)
-shear: 0.53749 # image shear (+/- deg)
+translate: 0.0624 # image translation (+/- fraction)
+scale: 0.72 # image scale (+/- gain)
+shear: 0.537 # image shear (+/- deg)
 perspective: 0.0 # image perspective (+/- fraction), range 0-0.001
-flipud: 0.36086 # image flip up-down (probability)
+flipud: 0.361 # image flip up-down (probability)
 fliplr: 0.5 # image flip left-right (probability)
-mosaic: 0.70048 # image mosaic (probability)
-mixup: 0.09164 # image mixup (probability)
-copy_paste: 0.11473 # segment copy-paste (probability)
+mosaic: 0.7 # image mosaic (probability)
+mixup: 0.0916 # image mixup (probability)
+copy_paste: 0.115 # segment copy-paste (probability)
